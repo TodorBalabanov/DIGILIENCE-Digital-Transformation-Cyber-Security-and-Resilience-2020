@@ -92,6 +92,86 @@
 \end{itemize}
 \end{frame}
 
+\section{Evolutionary Algorithms}
+
+\begin{frame}
+\center \huge{Evolutionary Algorithms}
+\end{frame}
+
+\subsection{Metaheuristic Optimization}
+
+\begin{frame}
+\frametitle{Population Based}
+\begin{itemize}
+	\item Organized with some kind of population
+	\item Some kind of evolution is applied
+	\item Applied in global optimization problems
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Population Specifics}
+\begin{itemize}
+	\item Individuals are vectors into solution space
+	\item Each individual is treated as a potential candidate for an optimal or sub-optimal solution
+	\item Individuals are evaluated according predefined fitness function
+	\item Better-fitted individuals should have better chances to mate
+\end{itemize}
+\end{frame}
+
+\subsection{Optimization Problem}
+
+\begin{frame}
+\frametitle{Financial Time Series Forecasting}
+\includegraphics[scale=0.2]{fig01}
+\end{frame}
+
+\begin{frame}
+\frametitle{Forecasting with Three-Layer Perceptron}
+\includegraphics[scale=0.2]{fig02}
+\end{frame}
+
+\begin{frame}
+\frametitle{Series as Training Set}
+\includegraphics[scale=0.25]{fig03}
+\end{frame}
+
+\begin{frame}
+\frametitle{Forecasting as Mobile Distributed Computing}
+\includegraphics[scale=0.2]{fig04}
+\end{frame}
+
+\subsection{Distributed Computing Specific Security Problems}
+
+\begin{frame}
+\frametitle{General Issues}
+\begin{itemize}
+	\item Donated distributed computing has all security problem as the other software
+	\item It has two extra security problems
+	\begin{itemize}
+		\item Volunteer can manipulate the calculation results
+		\item The accuracy of the results are not guaranteed because of the heterogeneous hardware and software on the client-side
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{How Distributed Evolutionary Algorithms are Affected}
+\begin{itemize}
+	\item Fake individuals are received in the global population on the server-side
+	\item Individuals with unsatisfying accuracy are received on the server-side
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Positive Effect}
+\begin{itemize}
+	\item Both problems do not harm the global population so much
+	\item Low-quality individuals are removed in local populations relatively fast
+	\item It has even a positive effect by making genotype diversity even higher during the process of new local population forming
+\end{itemize}
+\end{frame}
+
 \section{Conclusions}
 
 \begin{frame}
@@ -106,7 +186,7 @@
 	\item Cost-efficiency
 	\item Almost infinite scaling capabilities
 	\item Donated distributed computing is one of the most promising areas of scientific researches
-	\item For population-based evolutionary algorithms the security issues can be even positive as a side effect than negative
+	\item For population-based evolutionary algorithms some of the security issues can be even positive as a side effect than negative
 \end{itemize}
 \end{frame}
 
